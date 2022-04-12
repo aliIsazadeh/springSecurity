@@ -42,7 +42,7 @@ public class FakeApplicationDaoUserService implements ApplicationUserDao{
                 )
                 , new ApplicationUser(
                 "Ali"
-                , passwordEncoder.encode("password")
+                , passwordEncoder.encode("  ")
                 , ADMIN.getGrantedAuthority(),
                 true
                 ,true
