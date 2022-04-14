@@ -30,7 +30,7 @@ public class FakeApplicationDaoUserService implements ApplicationUserDao{
     }
 
     private List<ApplicationUser> getApplicationUsers(){
-        List<ApplicationUser> applicationUsers = Lists.newArrayList(
+        return Lists.newArrayList(
                 new ApplicationUser(
                          "Amin"
                         ,passwordEncoder.encode("password")
@@ -63,7 +63,6 @@ public class FakeApplicationDaoUserService implements ApplicationUserDao{
 
 
                 );
-        return applicationUsers;
 
     }
 }
